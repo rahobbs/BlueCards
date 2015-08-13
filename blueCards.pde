@@ -1,0 +1,19 @@
+void setup() {
+  size(1039,679);
+  background(50, 50, 50, 50);
+  stroke(75, 100);
+  frameRate(5);
+ 
+}
+ 
+void draw() {
+   int l = 40;
+   for (int y=0; y <=height; y+=l) {
+       for (int x =0; x<= width; x+=l) {
+         fill(random(50,150), random(5,80), random(180,235));
+       rect(x,y,l,l);           
+      }
+      saveFrame("blueCardsGrayLines-####.png");
+    }
+}
+
