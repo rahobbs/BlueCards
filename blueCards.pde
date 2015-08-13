@@ -1,6 +1,6 @@
 void setup() {
   size(1039,679);
-  background(50, 50, 50, 50);
+  background(70, 70, 70, 70);
   stroke(75, 100);
   frameRate(5);
  
@@ -13,7 +13,8 @@ void draw() {
          fill(random(50,150), random(5,80), random(180,235));
        rect(x,y,l,l);           
       }
-      saveFrame("blueCardsGrayLines-####.png");
+      //uncomment below to save each drawing
+      //saveFrame("blueCardsGrayLines-####.png");
     }
 }
 
